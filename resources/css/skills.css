@@ -1,0 +1,18 @@
+#skills .content-side {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#skills .content-side-item {
+  width: 50%;
+  margin-bottom: 20px;
+  padding-right: 20px;
+}
+
+/*------------ Media Query ------------*/
+@media screen and (max-width: 940px) {
+  #skills .content-side-item {
+    width: 100%;
+    padding-right: 0;
+  }
+}

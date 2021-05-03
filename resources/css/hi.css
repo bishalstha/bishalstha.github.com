@@ -1,0 +1,134 @@
+#hi {
+  --title-font-size: 270%;
+  display: flex;
+}
+
+#typed {
+  font-size: var(--title-font-size);
+  font-weight: 600;
+}
+
+.typed-cursor {
+  font-size: var(--title-font-size);
+}
+
+.personal-info {
+  flex: 1;
+}
+
+.info-list {
+  margin-top: 20px;
+}
+
+.info-row {
+  display: flex;
+}
+
+.info-col {
+  font-size: 70%;
+  margin-bottom: 10px;
+}
+
+.info-col:first-child {
+  text-transform: uppercase;
+  flex: 1;
+  font-weight: 600;
+}
+
+.info-col:last-child {
+  flex: 4;
+}
+
+.socials {
+  font-size: 130%;
+  display: flex;
+}
+
+.socials a {
+  color: inherit;
+}
+
+.socials > * {
+  margin-right: 20px;
+}
+
+.info-buttons {
+  margin-top: 30px;
+  display: flex;
+}
+
+.info-buttons a {
+  text-decoration: none;
+  font-size: 60%;
+  text-transform: uppercase;
+}
+
+.info-btn {
+  padding: 15px 30px;
+  border-radius: 2px;
+  margin-right: 30px;
+  transition: box-shadow 200ms ease;
+  text-align: center;
+}
+
+.info-btn:hover {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#contact-me-btn {
+  background: var(--accent-blue);
+  color: #fff;
+}
+
+#download-cv-btn {
+  color: inherit;
+  background: #efefef;
+}
+
+.dev-photo {
+  flex: 1;
+  text-align: right;
+}
+
+.dev-photo img {
+  width: 80%;
+}
+
+/*------------ Media Query ------------*/
+@media screen and (max-width: 940px) {
+  #hi {
+    --title-font-size: 200%;
+  }
+
+  .personal-info {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .dev-photo {
+    display: none;
+  }
+
+  .info-buttons {
+    flex-direction: column;
+    margin-top: 15px;
+  }
+
+  .info-btn {
+    margin: 0 0 20px 0;
+  }
+
+  .info-btn:last-child {
+    margin-bottom: 0;
+  }
+
+  .info-btn:hover {
+    box-shadow: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .info-col:last-child {
+    flex: 3;
+  }
+}
