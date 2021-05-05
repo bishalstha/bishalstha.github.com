@@ -6,6 +6,7 @@
   left: 0;
   width: 100%;
   background: #fff;
+  z-index: 999;
 }
 
 .sticky-nav nav {
@@ -68,7 +69,6 @@
 .nav-link a {
   font-size: 60%;
   font-weight: 600;
-  text-decoration: none;
   color: inherit;
 }
 

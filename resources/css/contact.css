@@ -55,11 +55,7 @@
 }
 
 .contact-submit input {
-  text-transform: uppercase;
-  font-size: 60%;
-  color: #fff;
   padding: 20px 40px;
-  background: var(--accent-blue);
 }
 
 /*------------ Media Query ------------*/

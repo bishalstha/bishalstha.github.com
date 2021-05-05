@@ -24,6 +24,7 @@
         <li class="nav-link"><a href="#skills">Skills</a></li>
         <li class="nav-link"><a href="#experience">Experience</a></li>
         <li class="nav-link"><a href="#education">Education</a></li>
+        <li class="nav-link"><a href="#portfolio">Portfolio</a></li>
         <li class="nav-link"><a href="#contact-me">Contact me</a></li>
       </ul>
       <i class="fas fa-bars menu-icon"></i>
@@ -86,8 +87,8 @@
           </div>
 
           <div class="info-buttons">
-            <a href="#contact-me" class="info-btn" id="contact-me-btn">Contact Me</a>
-            <a href="resources/extra/cv.pdf" class="info-btn" id="download-cv-btn" download>
+            <a href="#contact-me" class="btn primary-btn" id="contact-me-btn">Contact Me</a>
+            <a href="resources/extra/cv.pdf" class="btn secondary-btn" id="download-cv-btn" download>
               Download CV
             </a>
           </div>
@@ -255,6 +256,88 @@
     </section>
     <!-- Education Ends -->
 
+    <!-- Portfolio Starts -->
+    <section class="section">
+      <div class="container" id="portfolio">
+        <div class="section-container">
+          <h1 class="with-full-stop">Portfolio</h1>
+          <div class="projects-nav">
+            <a href="#" data-filter="all">All projects</a>
+            <a href="#" data-filter=".cat-ios">iOS app</a>
+            <a href="#" data-filter=".cat-android">Android app</a>
+            <a href="#" data-filter=".cat-backends">Backends</a>
+          </div>
+
+          <div class="projects">
+            <div class="project mix cat-ios" data-order="1">
+              <img src="resources/img/hoyhoy.webp" alt="HoyHoy App" />
+              <div class="project-content">
+                <h2>HoyHoy</h2>
+                <div class="project-badge">iOS App</div>
+              </div>
+            </div>
+
+            <div class="project mix cat-ios" data-order="2">
+              <img src="resources/img/nepali-law.webp" alt="Nepali Kanoon App" />
+              <div class="project-content">
+                <h2>Nepali Kanoon</h2>
+                <div class="project-badge">iOS App</div>
+              </div>
+            </div>
+
+            <div class="project mix cat-ios" data-order="3">
+              <img src="resources/img/ekoplaza.webp" alt="Ekoplaza" />
+              <div class="project-content">
+                <h2>Ekoplaza</h2>
+                <div class="project-badge">iOS App</div>
+              </div>
+            </div>
+
+            <div class="project mix cat-ios" data-order="4">
+              <img src="resources/img/mycols.webp" alt="myCols" />
+              <div class="project-content">
+                <h2>myCols</h2>
+                <div class="project-badge">iOS App</div>
+              </div>
+            </div>
+
+            <div class="project mix cat-ios" data-order="5">
+              <img src="resources/img/lovelock.webp" alt="Lovelock App" />
+              <div class="project-content">
+                <h2>Lovelock App</h2>
+                <div class="project-badge">iOS App</div>
+              </div>
+            </div>
+
+            <div class="project mix cat-android" data-order="6">
+              <img src="resources/img/steroid-tools.webp" alt="Steroid Tools App" />
+              <div class="project-content">
+                <h2>Steroid Tools</h2>
+                <div class="project-badge">Android App</div>
+              </div>
+            </div>
+
+            <div class="project mix cat-backends" data-order="7">
+              <img src="resources/img/hoyhoy.webp" alt="HoyHoy Backend" />
+              <div class="project-content">
+                <h2>HoyHoy Backend</h2>
+                <div class="project-badge">Backend</div>
+              </div>
+            </div>
+
+            <div class="project mix cat-backends" data-order="8">
+              <img src="resources/img/server.png" alt="OpenMic Backend" />
+              <div class="project-content">
+                <h2>OpenMic Backend</h2>
+                <div class="project-badge">Backend</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio Ends -->
+
     <!-- Contact Me Starts -->
     <section class="section">
       <div class="container" id="contact-me">
@@ -282,7 +365,7 @@
               </div>
 
               <div class="contact-submit">
-                <input type="submit" value="Send Message" />
+                <input type="submit" value="Send Message" class="btn primary-btn" />
               </div>
             </form>
           </div>
@@ -298,6 +381,31 @@
   </footer>
   <!-- Footer Ends -->
 
+  <!-- Modal Starts -->
+  <div class="project-modal">
+    <div class="modal-content">
+      <h1 class="modal-title with-full-stop"></h1>
+      <p class="modal-brief-message"></p>
+
+      <p class="modal-technologies">
+        <span class="modal-tag">Technologies</span>
+        <span class="tech-stack"></span>
+      </p>
+
+      <p class="modal-type">
+        <span class="modal-tag"></span>
+      </p>
+
+      <div class="modal-pics"></div>
+
+      <div class="modal-buttons">
+        <div class="btn primary-btn" id="modal-visit-btn">Visit Website</div>
+        <div class="btn secondary-btn" id="modal-close-btn">Close</div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Ends -->
+
   <!-- Toast Starts -->
   <div class="alert-box">
   </div>
@@ -308,6 +416,9 @@
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"
     integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ=="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"
+    integrity="sha512-nKZDK+ztK6Ug+2B6DZx+QtgeyAmo9YThZob8O3xgjqhw2IVQdAITFasl/jqbyDwclMkLXFOZRiytnUrXk/PM6A=="
     crossorigin="anonymous"></script>
   <script src="resources/js/script.js"></script>
   <!-- Scripts Ends -->

@@ -114,6 +114,31 @@ footer p {
   transform: translateX(0);
 }
 
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  padding: 15px 30px;
+  border-radius: 2px;
+  font-size: 60%;
+  transition: box-shadow 200ms ease;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.primary-btn {
+  background: var(--accent-blue);
+  color: #fff;
+}
+
+.secondary-btn {
+  color: inherit;
+  background: #efefef;
+}
+
 /*------------ Media Query ------------*/
 @media screen and (max-width: calc(1140px * 1.05)) {
   .container {
@@ -142,5 +167,9 @@ footer p {
 
   .content-side {
     margin-top: 20px;
+  }
+
+  .btn:hover {
+    box-shadow: none;
   }
 }
